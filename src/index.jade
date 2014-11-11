@@ -57,183 +57,283 @@ html
 
           .separator
 
-            .share.row.nopad
-              .col-half
+          .share.row.nopad
+            .col-half
 
-                .avatar
-                  img(src="../build/images/photo_1.png")
-                  svg
-                    use(xlink:href="#arrow-plus")
-                .hint
-                  | Поделитесь моей коллекцией
-                  | с друзьями и вместе получайте
-                  | скидки за покупки
+              .avatar
+                img(src="../build/images/photo_1.png")
+                svg
+                  use(xlink:href="#arrow-plus")
+              .hint
+                | Поделитесь моей коллекцией
+                | с друзьями и вместе получайте
+                | скидки за покупки
 
-                .links
-                  a.green.f-left
+              .links
+                .f-left.left
+                  a.green
                     svg.svg-icon
                       use(xlink:href="#esi_check-circle-o")
                     | Нино Элиава
-                  a.f-right
+                .f-right.right
+                  a
                     svg.svg-icon
                       use(xlink:href="#esi_question-circle-o")
                     | Как это работает
 
-              .social.col-half.row.nopad
+            .social.col-half.row.nopad
 
-                a.col-quarter.fb
-                  svg.icon-svg
-                    use(xlink:href="#esi_facebook")
-                  i 117
-                a.col-quarter.tt
-                  svg.icon-svg
-                    use(xlink:href="#esi_twitter")
-                  i 117
-                a.col-quarter.vk
-                  svg.icon-svg
-                    use(xlink:href="#esi_vk")
-                  i 117
-                a.col-quarter.ok
-                  svg.icon-svg
-                    use(xlink:href="#esi_odnoklassniki")
-                  i 117
+              a.col-quarter.fb
+                svg.icon-svg
+                  use(xlink:href="#esi_facebook")
+                i 117
+              a.col-quarter.tt
+                svg.icon-svg
+                  use(xlink:href="#esi_twitter")
+                i 117
+              a.col-quarter.vk
+                svg.icon-svg
+                  use(xlink:href="#esi_vk")
+                i 117
+              a.col-quarter.ok
+                svg.icon-svg
+                  use(xlink:href="#esi_odnoklassniki")
+                i 117
 
-            .separator
+          .separator
 
-            .row.promo
-              .col-1
-              .col-6
-                | В новом сезоне неоновый — горячий тренд
-                | показов весенне-летних коллекций. Желтый — цвет
-                | солнца, лета и тепла. Их правильное сочетание помогут
-                | вам создать яркий и стильный образ.
+          .row.promo
+            .col-1
+            .col-6
+              | В новом сезоне неоновый — горячий тренд
+              | показов весенне-летних коллекций. Желтый — цвет
+              | солнца, лета и тепла. Их правильное сочетание помогут
+              | вам создать яркий и стильный образ.
 
-            .separator
+          .separator
 
-            .items.row
-              .item.col-half
-                img(src="../build/images/items/1.png")
-                .overlay
-                  a.green
-                    svg.svg-icon
-                      use(xlink:href="#esi_shopping-cart")
-                    | Купить
-                  p 1  020
+          .items.row
+            .item.col-half
+              img(src="../build/images/items/1.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
 
 
-              .item.col-quarter
-                img(src="../build/images/items/2.png")
-                .overlay
-                  a.green
-                    svg.svg-icon
-                      use(xlink:href="#esi_shopping-cart")
-                    | Купить
-                  p 1  020
+            .item.col-quarter
+              img(src="../build/images/items/2.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
 
-              .item.col-quarter
-                img(src="../build/images/items/3.png")
-                .overlay
-                  a.green
-                    svg.svg-icon
-                      use(xlink:href="#esi_shopping-cart")
-                    | Купить
-                  p 1  020
+            .item.col-quarter
+              img(src="../build/images/items/3.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
 
-              .item.col-quarter
-                img(src="../build/images/items/4.png")
-                .overlay
-                  a.green
-                    svg.svg-icon
-                      use(xlink:href="#esi_shopping-cart")
-                    | Купить
-                  p 1  020
+            .item.col-quarter
+              img(src="../build/images/items/4.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
 
-              .item.col-quarter
-                img(src="../build/images/items/5.png")
-                .overlay
-                  a.green
-                    svg.svg-icon
-                      use(xlink:href="#esi_shopping-cart")
-                    | Купить
-                  p 1  020
+            .item.col-quarter
+              img(src="../build/images/items/5.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
 
-            .items.row
+          .items.row
 
-              .col-half.promo
-                p
-                  | Надеть желтое платье или костюм решится не каждая, поэтому для скромных, но не желающих отставать от моды девушек, дизайнеры предлагают огромный выбор желтых и неоновых аксессуаров, которые мгновенно преобразят весь образ.
-                p
-                  | Самый простой способ создать актуальный образ — выбрать желтую сумку. Обувь желтого цвета тоже становится все более востребованной. И, если одежда солнечной палитры требует лаконичности форм, то обувь вполне допускает более ироничные и замысловатые трактовки.
-                p
-                  | И даже с помощью украшений можно расставить яркие акценты в наряде – часы на желтом ремне, браслет или ободок обыграют летний комплект, добавив ему легкости. Правильно подобранный оттенок желтого выгодно оттенит цвет кожи и подчеркнет загар.
+            .col-half.promo
+              p
+                | Надеть желтое платье или костюм решится не каждая, поэтому для скромных, но не желающих отставать от моды девушек, дизайнеры предлагают огромный выбор желтых и неоновых аксессуаров, которые мгновенно преобразят весь образ.
+              p
+                | Самый простой способ создать актуальный образ — выбрать желтую сумку. Обувь желтого цвета тоже становится все более востребованной. И, если одежда солнечной палитры требует лаконичности форм, то обувь вполне допускает более ироничные и замысловатые трактовки.
+              p
+                | И даже с помощью украшений можно расставить яркие акценты в наряде – часы на желтом ремне, браслет или ободок обыграют летний комплект, добавив ему легкости. Правильно подобранный оттенок желтого выгодно оттенит цвет кожи и подчеркнет загар.
 
-              .col-half.item
-                img(src="../build/images/items/6.png")
-                .overlay
-                  a.green
-                    svg.svg-icon
-                      use(xlink:href="#esi_shopping-cart")
-                    | Купить
-                  p 1  020
+            .col-half.item
+              img(src="../build/images/items/6.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
 
-            .items.row.nopad
+          .items.row
 
-              .item.col-half
-                .row
-                  .item.col-quarter
-                    img(src="../build/images/items/7.png")
-                    .overlay
-                      a.green
-                        svg.svg-icon
-                          use(xlink:href="#esi_shopping-cart")
-                        | Купить
-                      p 1  020
+            .col-half
+              .row
+                .item.col-quarter
+                  img(src="../build/images/items/7.png")
+                  .overlay
+                    a.green
+                      svg.svg-icon
+                        use(xlink:href="#esi_shopping-cart")
+                      | Купить
+                    p 1  020
 
-                  .item.col-quarter
-                    img(src="../build/images/items/8.png")
-                    .overlay
-                      a.green
-                        svg.svg-icon
-                          use(xlink:href="#esi_shopping-cart")
-                        | Купить
-                      p 1  020
+                .item.col-quarter
+                  img(src="../build/images/items/8.png")
+                  .overlay
+                    a.green
+                      svg.svg-icon
+                        use(xlink:href="#esi_shopping-cart")
+                      | Купить
+                    p 1  020
 
-                  .item.col-quarter
-                    img(src="../build/images/items/9.png")
-                    .overlay
-                      a.green
-                        svg.svg-icon
-                          use(xlink:href="#esi_shopping-cart")
-                        | Купить
-                      p 1  020
+                .item.col-quarter
+                  img(src="../build/images/items/9.png")
+                  .overlay
+                    a.green
+                      svg.svg-icon
+                        use(xlink:href="#esi_shopping-cart")
+                      | Купить
+                    p 1  020
 
-                  .item.col-quarter
-                    img(src="../build/images/items/10.png")
-                    .overlay
-                      a.green
-                        svg.svg-icon
-                          use(xlink:href="#esi_shopping-cart")
-                        | Купить
-                      p 1  020
+                .item.col-quarter
+                  img(src="../build/images/items/10.png")
+                  .overlay
+                    a.green
+                      svg.svg-icon
+                        use(xlink:href="#esi_shopping-cart")
+                      | Купить
+                    p 1  020
 
-              .col-half.item
-                img(src="../build/images/items/11.png")
-                .overlay
-                  a.green
-                    svg.svg-icon
-                      use(xlink:href="#esi_shopping-cart")
-                    | Купить
-                  p 1  020
+            .col-half.item
+              img(src="../build/images/items/11.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
 
-              
+          .row.items
+            .promo.col-half
 
-              
+              p breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad
+              p breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad
+              p breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad
+              p breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad
+              p breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad, breaking bad
+
+            .item.col-quarter
+              img(src="../build/images/items/12.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
+
+            .item.col-quarter
+              img(src="../build/images/items/13.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
+
+            .item.col-quarter
+              img(src="../build/images/items/14.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
+
+            .item.col-quarter
+              img(src="../build/images/items/15.png")
+              .overlay
+                a.green
+                  svg.svg-icon
+                    use(xlink:href="#esi_shopping-cart")
+                  | Купить
+                p 1  020
+
+
+          .separator
+
+          .share.row.nopad
+            .col-half
+
+              .avatar
+                img(src="../build/images/photo_1.png")
+                svg
+                  use(xlink:href="#arrow-plus")
+              .hint
+                | Поделитесь моей коллекцией
+                | с друзьями и вместе получайте
+                | скидки за покупки
+
+              .links
+                a.green.f-left
+                  svg.svg-icon
+                    use(xlink:href="#esi_check-circle-o")
+                  | Нино Элиава
+                a.f-right
+                  svg.svg-icon
+                    use(xlink:href="#esi_question-circle-o")
+                  | Как это работает
+
+            .social.col-half.row.nopad
+
+              a.col-quarter.fb
+                svg.icon-svg
+                  use(xlink:href="#esi_facebook")
+                i 117
+              a.col-quarter.tt
+                svg.icon-svg
+                  use(xlink:href="#esi_twitter")
+                i 117
+              a.col-quarter.vk
+                svg.icon-svg
+                  use(xlink:href="#esi_vk")
+                i 117
+              a.col-quarter.ok
+                svg.icon-svg
+                  use(xlink:href="#esi_odnoklassniki")
+                i 117
+
+          .separator
+          .separator
 
 
     footer
       .container
+
         nav
           a(href="#discounts") Как получать скидки
           a(href="#faq") Частые вопросы
           a(href="#licence") Условия использования
           a(href="#feedback") Обратная связь
+
+        nav
+          a(href="#developer")
+            i.pail Разработка:
+            |  Evil Martians
+
+          a(href="#designer")
+            i.pail Дизайн:
+            |  UIDG

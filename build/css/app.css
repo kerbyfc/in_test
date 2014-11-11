@@ -726,7 +726,7 @@ footer nav a {
   padding-right: 6px;
 }
 
-/* line 22, ../../src/css/base/links.scss */
+/* line 28, ../../src/css/base/links.scss */
 a {
   color: #796E65;
   text-decoration: none;
@@ -744,15 +744,23 @@ a > svg {
   margin-left: -4px;
 }
 /* line 14, ../../src/css/base/links.scss */
+a > .pail {
+  color: #BFB8AF;
+}
+/* line 17, ../../src/css/base/links.scss */
 a.active, a:hover {
   color: #91D000;
 }
-/* line 16, ../../src/css/base/links.scss */
+/* line 19, ../../src/css/base/links.scss */
 a.active > svg, a:hover > svg {
   fill: #91D000;
 }
+/* line 22, ../../src/css/base/links.scss */
+a.active > pail, a:hover > pail {
+  color: #BFB8AF;
+}
 
-/* line 28, ../../src/css/base/links.scss */
+/* line 34, ../../src/css/base/links.scss */
 a.orange {
   color: #F6AF02;
 }
@@ -768,15 +776,23 @@ a.orange > svg {
   margin-left: -4px;
 }
 /* line 14, ../../src/css/base/links.scss */
+a.orange > .pail {
+  color: #BFB8AF;
+}
+/* line 17, ../../src/css/base/links.scss */
 a.orange.active, a.orange:hover {
   color: #FFC600;
 }
-/* line 16, ../../src/css/base/links.scss */
+/* line 19, ../../src/css/base/links.scss */
 a.orange.active > svg, a.orange:hover > svg {
   fill: #FFC600;
 }
+/* line 22, ../../src/css/base/links.scss */
+a.orange.active > pail, a.orange:hover > pail {
+  color: #BFB8AF;
+}
 
-/* line 32, ../../src/css/base/links.scss */
+/* line 38, ../../src/css/base/links.scss */
 a.green {
   color: #84BD00;
 }
@@ -792,12 +808,20 @@ a.green > svg {
   margin-left: -4px;
 }
 /* line 14, ../../src/css/base/links.scss */
+a.green > .pail {
+  color: #BFB8AF;
+}
+/* line 17, ../../src/css/base/links.scss */
 a.green.active, a.green:hover {
   color: #91D000;
 }
-/* line 16, ../../src/css/base/links.scss */
+/* line 19, ../../src/css/base/links.scss */
 a.green.active > svg, a.green:hover > svg {
   fill: #91D000;
+}
+/* line 22, ../../src/css/base/links.scss */
+a.green.active > pail, a.green:hover > pail {
+  color: #BFB8AF;
 }
 
 /* line 4, ../../src/css/base/container.scss */
@@ -1071,13 +1095,18 @@ header nav.menu li a > svg {
   height: 43px;
   width: 348px;
 }
-/* line 49, ../../src/css/project/share.scss */
+/* line 45, ../../src/css/project/share.scss */
+.share .links a > svg {
+  width: 25px;
+  height: 25px;
+}
+/* line 52, ../../src/css/project/share.scss */
 .share .social > a {
   height: 87.5px;
   position: relative;
   text-align: center;
 }
-/* line 54, ../../src/css/project/share.scss */
+/* line 57, ../../src/css/project/share.scss */
 .share .social > a > .icon-svg {
   width: 50px;
   height: 50px;
@@ -1086,7 +1115,7 @@ header nav.menu li a > svg {
   margin-left: -25px;
   fill: #fff;
 }
-/* line 62, ../../src/css/project/share.scss */
+/* line 65, ../../src/css/project/share.scss */
 .share .social > a i {
   position: absolute;
   display: block;
@@ -1096,23 +1125,23 @@ header nav.menu li a > svg {
   top: 10px;
   color: #BFB8AF;
 }
-/* line 72, ../../src/css/project/share.scss */
+/* line 75, ../../src/css/project/share.scss */
 .share .social > a:hover i {
   color: #91D000;
 }
-/* line 78, ../../src/css/project/share.scss */
+/* line 81, ../../src/css/project/share.scss */
 .share .social .fb {
   background-color: #24599b;
 }
-/* line 81, ../../src/css/project/share.scss */
+/* line 84, ../../src/css/project/share.scss */
 .share .social .tt {
   background-color: #1eaaf1;
 }
-/* line 84, ../../src/css/project/share.scss */
+/* line 87, ../../src/css/project/share.scss */
 .share .social .vk {
   background-color: #45668e;
 }
-/* line 87, ../../src/css/project/share.scss */
+/* line 90, ../../src/css/project/share.scss */
 .share .social .ok {
   background-color: #ff7b11;
 }
@@ -1198,7 +1227,7 @@ header nav.menu li a > svg {
   height: 45px;
   line-height: 49.5px;
 }
-/* line 40, ../../src/css/base/links.scss */
+/* line 46, ../../src/css/base/links.scss */
 .items .item.col-half .overlay a svg {
   padding-top: 18.5px;
 }
@@ -1208,7 +1237,7 @@ header nav.menu li a > svg {
   height: 45px;
   line-height: 49.5px;
 }
-/* line 40, ../../src/css/base/links.scss */
+/* line 46, ../../src/css/base/links.scss */
 .items .item.col-half .overlay p svg {
   padding-top: 12px;
 }
@@ -1222,7 +1251,7 @@ header nav.menu li a > svg {
   height: 32px;
   line-height: 35.2px;
 }
-/* line 40, ../../src/css/base/links.scss */
+/* line 46, ../../src/css/base/links.scss */
 .items .item.col-quarter .overlay a svg {
   padding-top: 12px;
 }
@@ -1232,7 +1261,7 @@ header nav.menu li a > svg {
   height: 32px;
   line-height: 35.2px;
 }
-/* line 40, ../../src/css/base/links.scss */
+/* line 46, ../../src/css/base/links.scss */
 .items .item.col-quarter .overlay p svg {
   padding-top: 9px;
 }

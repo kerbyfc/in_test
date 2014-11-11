@@ -11,10 +11,16 @@
     padding-right: 2px;
     margin-left: - $svg-icon-padding / 2
   }
+  & > .pail {
+    color: $gray-light;
+  }
   &.active, &:hover {
     color: $hovered;
     & > svg {
       fill: $hovered;
+    }
+    & > pail {
+      color: $gray-light;
     }
   }
 }

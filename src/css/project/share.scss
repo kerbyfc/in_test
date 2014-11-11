@@ -42,6 +42,9 @@
   .links {
     height: 55px - 12px;
     width: col(4) - $share-avatar-width - 12 - 38;
+    a > svg {
+      @include size(25px);
+    }
   }
 
   .social {
