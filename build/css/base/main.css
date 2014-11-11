@@ -1,0 +1,68 @@
+/* line 3, ../../../src/css/base/main.scss */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 11, ../../../src/css/base/main.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 15, ../../../src/css/base/main.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 18, ../../../src/css/base/main.scss */
+.clearfix {
+  display: block;
+}
+
+/* line 23, ../../../src/css/base/main.scss */
+html, body, #wrap {
+  height: 100%;
+}
+
+/* line 28, ../../../src/css/base/main.scss */
+body {
+  background: #f3f3f3;
+  letter-spacing: -0.02em;
+  color: #3d3935;
+}
+/* line 32, ../../../src/css/base/main.scss */
+body > svg {
+  display: none;
+}
+/* line 35, ../../../src/css/base/main.scss */
+body #wrap {
+  height: auto;
+  min-height: 100%;
+}
+
+/* line 41, ../../../src/css/base/main.scss */
+#main {
+  padding-bottom: 177px;
+}
+
+/* line 45, ../../../src/css/base/main.scss */
+footer {
+  position: relative;
+  margin-top: -177px;
+  height: 177px;
+  clear: both;
+  background: #ffffff;
+  min-height: 177px;
+}
+/* line 52, ../../../src/css/base/main.scss */
+footer nav {
+  text-align: center;
+  padding-top: 45px;
+}
+/* line 55, ../../../src/css/base/main.scss */
+footer nav a {
+  padding: 0 25px;
+}

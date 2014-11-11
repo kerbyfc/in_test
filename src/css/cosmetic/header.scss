@@ -1,0 +1,11 @@
+@import 'vars';
+@import 'project/header';
+
+header {
+  border-bottom: 1px solid #d8d7d7;
+  .avatar, .nickname {
+    height: $header-height;
+    line-height: $header-height;
+    padding-left: 12px;
+  }
+}

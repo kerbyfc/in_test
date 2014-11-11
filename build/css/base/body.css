@@ -1,0 +1,10 @@
+/* line 3, ../../../src/css/base/body.scss */
+body {
+  background: #f3f3f3;
+  letter-spacing: -0.02em;
+  color: #3d3935;
+}
+/* line 7, ../../../src/css/base/body.scss */
+body > svg {
+  display: none;
+}

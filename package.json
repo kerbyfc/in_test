@@ -1,0 +1,26 @@
+{
+  "name": "idinaidi_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "broccoli": "^0.13.2",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-static-compiler": "^0.2.1",
+    "broccoli-sass": "^0.3.2"
+  },
+  "devDependencies": {
+    "grunt-spritesmith": "~1.26.0",
+    "grunt-svgstore": "~0.4.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-copy": "*",
+    "lodash": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

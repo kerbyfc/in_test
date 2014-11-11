@@ -1,0 +1,20 @@
+/* line 1, ../../../src/css/project/promo.scss */
+.promo.row {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+/* line 6, ../../../src/css/project/promo.scss */
+.promo[class*=col-] {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/* line 9, ../../../src/css/project/promo.scss */
+.promo[class*=col-] p {
+  margin-bottom: 1em;
+}
+
+/* line 14, ../../../src/css/project/promo.scss */
+.promo.col-half {
+  padding: 68px 25px;
+}

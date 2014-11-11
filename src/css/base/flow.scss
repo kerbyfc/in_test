@@ -1,0 +1,27 @@
+@import 'vars';
+@import 'mixins';
+
+.f-left {
+  float: $l;
+}
+
+.f-right {
+  float: $r;
+}
+
+.clearfix {
+  clear: both;
+  padding: 0;
+  margin: 0;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+@each $direction in left, center, right {
+  .#{$direction} {
+    text-align: $direction;
+  }
+}

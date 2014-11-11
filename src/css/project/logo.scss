@@ -1,0 +1,16 @@
+@import 'vars';
+@import 'mixins';
+@import 'project/header';
+
+$logo-padding: ($header-height - 37px) / 2;
+
+header {
+  .site-logo {
+    padding-bottom: $logo-padding;
+    padding-top: $logo-padding;
+    & > a {
+      @include inline-left;
+    }
+  }
+}
+

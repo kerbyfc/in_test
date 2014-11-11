@@ -1,0 +1,43 @@
+@import 'vars';
+@import 'mixins';
+
+@mixin color-a ($color, $hovered) {
+  color: $color;
+  & > svg {
+    @include size(25px);
+    @include inline-left;
+    fill: $color;
+    margin-top: - $svg-icon-padding;
+    padding-right: 2px;
+    margin-left: - $svg-icon-padding / 2
+  }
+  &.active, &:hover {
+    color: $hovered;
+    & > svg {
+      fill: $hovered;
+    }
+  }
+}
+
+a {
+  @include color-a ($gray, $gray-hover);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.orange {
+  @include color-a ($orange, $orange-hover);
+}
+
+a.green {
+  @include color-a ($green, $green-hover);
+}
+
+@mixin text($font-size, $height) {
+  font-size: $font-size;
+  height: $height;
+  line-height: $height + $height / 10;
+  svg {
+    padding-top: ($height - $font-size) / 2 + 2px;
+  }
+}

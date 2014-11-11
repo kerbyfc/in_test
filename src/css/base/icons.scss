@@ -1,0 +1,7 @@
+@import 'vars';
+@import 'mixins';
+
+.svg-icon {
+  display: inline-block;
+  @include size($svg-icon-size);
+}

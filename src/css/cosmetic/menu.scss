@@ -1,0 +1,19 @@
+@import 'vars';
+@import 'project/menu';
+
+header {
+  nav.menu {
+    li {
+      a {
+        text-transform: uppercase;
+        font-size: 18px;
+        @include menu-border;
+        &.active {
+          color: $gray-dark-hover;
+          min-width: 157px;
+          @include menu-border($green);
+        }
+      }
+    }
+  }
+}

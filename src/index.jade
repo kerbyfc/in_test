@@ -1,0 +1,58 @@
+doctype
+
+html
+  head
+    meta(http-equiv="content-type" content="text/html; charset=UTF-8")
+    link(rel="stylesheet", href="../build/css/app.css")
+    include ../build/images/svg-deps.svg
+
+  body
+
+    #wrap
+
+      header
+        .container
+          .row.nopad
+
+            // LOGO
+            .col-quarter.site-logo
+              a.icon-logo(href="/")
+
+            // MENU
+            nav.menu.col-half
+              li.col-quarter
+                a.active.f-right(href="#collections") Коллекции
+              li.col-eighth
+                a(href="#contests") Конкурсы
+              li.col-1.search
+                a(href="#search")
+                  svg.svg-icon
+                    use(xlink:href="#esi_question-circle-o")
+            .col-quarter
+              a(href="#profile")
+                div.nickname.f-right $999 999
+                img.avatar.f-right(src="../build/images/userpic.png")
+
+      #main.clearfix
+        .container
+
+          // BUTTONS
+          aside.actions-bar.row.nopad
+            .col-quarter
+              a.btn Выбор редакции
+            .col-half.center
+              a.btn.btn-orange
+                svg.svg-icon
+                  use(xlink:href="#esi_star-o")
+                | В избранное
+            .col-quarter.right
+              a.btn.btn-green
+                | Создать коллекцию на основе этой
+
+    footer
+      .container
+        nav
+          a(href="#discounts") Как получать скидки
+          a(href="#faq") Частые вопросы
+          a(href="#licence") Условия использования
+          a(href="#feedback") Обратная связь

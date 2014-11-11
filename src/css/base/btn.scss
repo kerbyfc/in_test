@@ -1,0 +1,47 @@
+@import 'vars';
+@import 'mixins';
+@import 'base/icons';
+
+@mixin color-btn ($color, $hovered) {
+  border-color: $color;
+  color: $color;
+  & > svg {
+    fill: $color;
+  }
+  &.active, &:hover {
+    color: $hovered;
+    border-color: $hovered;
+    & > svg {
+      fill: $color;
+    }
+  }
+}
+
+.btn {
+  border-width: 1px;
+  border-style: solid;
+  @include rounded;
+  display: inline-block;
+  font-size: $btn-font-size;
+  height: $btn-font-size * 0.8;
+  line-height: $btn-font-size * 1.3;
+  padding: $btn-font-size * 0.8;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  & > .svg-icon {
+    @include size(25px);
+    @include inline-left;
+    margin-top: - $svg-icon-padding;
+    padding-right: 2px;
+  }
+
+}
+
+.btn.btn-orange {
+  @include color-btn ($orange, $orange-hover);
+}
+
+.btn.btn-green {
+  @include color-btn ($green, $green-hover);
+}

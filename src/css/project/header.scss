@@ -1,0 +1,10 @@
+@import 'vars';
+@import 'mixins';
+@import 'sprites/common';
+@import 'base/lists';
+
+header {
+  width: 100%;
+  background: $header-bg;
+  height: $header-height;
+}

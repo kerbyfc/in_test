@@ -1,0 +1,39 @@
+/* line 1, ../sprites/common.scss */
+.icon-logo {
+  background-image: url(../../build/images/sprites/common.png);
+  background-position: 0px 0px;
+  width: 92px;
+  height: 37px;
+}
+
+/* line 6, ../../../src/css/project/header.scss */
+header {
+  width: 100%;
+  background: #ffffff;
+  height: 86px;
+}
+
+/* line 11, ../../../src/css/project/menu.scss */
+header nav.menu {
+  list-style: none;
+}
+/* line 5, ../../../src/css/base/lists.scss */
+header nav.menu li {
+  list-style: none;
+}
+/* line 13, ../../../src/css/project/menu.scss */
+header nav.menu li {
+  display: inline-block;
+  float: left;
+  height: 86px;
+  line-height: 86px;
+  padding-right: 5px;
+}
+/* line 18, ../../../src/css/project/menu.scss */
+header nav.menu li a {
+  text-align: center;
+}
+/* line 20, ../../../src/css/project/menu.scss */
+header nav.menu li a > svg {
+  margin-top: 23.5px;
+}

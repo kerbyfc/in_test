@@ -1,0 +1,11 @@
+/* line 4, ../../../src/css/base/container.scss */
+.container {
+  width: 1188px;
+  clear: both;
+  margin: 0 auto;
+}
+/* line 9, ../../../src/css/base/container.scss */
+.container .separator {
+  clear: both;
+  height: 50px;
+}

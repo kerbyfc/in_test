@@ -1,0 +1,59 @@
+@import 'vars';
+@import 'mixins';
+
+@mixin grid {
+  float: left;
+  display: block;
+  position: relative;
+  min-height: 1px;
+}
+
+@function col($multiplier, $padding:0) {
+  $cwidth: $content-width;
+  @if $padding == true {
+    $padding: $grid-padding * 2;
+  }
+  @if $padding == 0 {
+    $cwidth: $content-width - $grid-padding * 2;
+  }
+  @return ($cwidth + $grid-padding * 2) / $cols * $multiplier - $padding;
+}
+
+@for $i from 1 through $cols {
+  .col-#{$i} {
+    @include grid;
+    width: col($i, true);
+  }
+  .row.nopad > .col-#{$i} {
+    @include grid;
+    width: col($i);
+  }
+}
+
+@each $class, $devider in
+  (half    , 2),
+  (third   , 3),
+  (quarter , 4),
+  (sixth   , 6),
+  (eighth  , 8) {
+    @if $cols % $devider == 0 {
+      .col-#{$class} {
+        @extend .col-#{$cols/$devider};
+      }
+    }
+  }
+
+.row {
+  min-height: 1px;
+
+  &:not(.nopad) {
+    margin-right: -$grid-padding;
+    margin-left:  -$grid-padding;
+
+    & > div[class*= col-] {
+      padding-left: $grid-padding;
+      padding-right: $grid-padding; 
+    }
+  }
+
+}

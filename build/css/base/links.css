@@ -1,0 +1,73 @@
+/* line 22, ../../../src/css/base/links.scss */
+a {
+  color: #796E65;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 6, ../../../src/css/base/links.scss */
+a > svg {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  float: left;
+  fill: #796E65;
+  margin-top: -8px;
+  padding-right: 2px;
+  margin-left: -4px;
+}
+/* line 14, ../../../src/css/base/links.scss */
+a.active, a:hover {
+  color: #91D000;
+}
+/* line 16, ../../../src/css/base/links.scss */
+a.active > svg, a:hover > svg {
+  fill: #91D000;
+}
+
+/* line 28, ../../../src/css/base/links.scss */
+a.orange {
+  color: #F6AF02;
+}
+/* line 6, ../../../src/css/base/links.scss */
+a.orange > svg {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  float: left;
+  fill: #F6AF02;
+  margin-top: -8px;
+  padding-right: 2px;
+  margin-left: -4px;
+}
+/* line 14, ../../../src/css/base/links.scss */
+a.orange.active, a.orange:hover {
+  color: #FFC600;
+}
+/* line 16, ../../../src/css/base/links.scss */
+a.orange.active > svg, a.orange:hover > svg {
+  fill: #FFC600;
+}
+
+/* line 32, ../../../src/css/base/links.scss */
+a.green {
+  color: #84BD00;
+}
+/* line 6, ../../../src/css/base/links.scss */
+a.green > svg {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  float: left;
+  fill: #84BD00;
+  margin-top: -8px;
+  padding-right: 2px;
+  margin-left: -4px;
+}
+/* line 14, ../../../src/css/base/links.scss */
+a.green.active, a.green:hover {
+  color: #91D000;
+}
+/* line 16, ../../../src/css/base/links.scss */
+a.green.active > svg, a.green:hover > svg {
+  fill: #91D000;
+}

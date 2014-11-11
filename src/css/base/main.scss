@@ -1,0 +1,61 @@
+@import 'vars';
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  display: inline-block;
+}
+
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+
+
+html, body, #wrap {
+  height: 100%;
+}
+
+
+body {
+  background: $body-bg;
+  letter-spacing: -0.02em;
+  color: rgb(61, 57, 53);
+  & > svg {
+    display: none;
+  }
+  #wrap {
+    height: auto; 
+    min-height: 100%;
+  }
+}
+
+#main {
+  padding-bottom: $footer-height;
+}
+
+footer {
+  position: relative;
+  margin-top: - $footer-height;
+  height: $footer-height;
+  clear:both;
+  background: $footer-bg;
+  min-height: $footer-height;
+  nav {
+    text-align: $c;
+    padding-top: 45px;
+    a {
+      padding: 0 25px;
+    }
+  }
+
+}
+

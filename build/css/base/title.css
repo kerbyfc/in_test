@@ -1,0 +1,10 @@
+/* line 3, ../../../src/css/base/title.scss */
+.page-title {
+  margin: 0;
+  letter-spacing: 0.9;
+  font-size: 66px;
+  line-height: 67px;
+  text-transform: uppercase;
+  color: #24599b;
+  text-align: center;
+}

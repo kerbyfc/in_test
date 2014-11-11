@@ -1,0 +1,26 @@
+@import 'vars';
+@import 'mixins';
+@import 'base/lists';
+@import 'project/header';
+
+@mixin menu-border ($color:$header-bg) {
+  border-top: $menu-activity-border-size solid $color;
+}
+
+header {
+  nav.menu {
+    @include list;
+    li {
+      @include inline-left;
+      height: $header-height;
+      line-height: $header-height;
+      padding-right: 5px;
+      a {
+        text-align: center;
+        & > svg {
+          margin-top: $header-height / 2 - $svg-icon-size / 2 - $menu-activity-border-size;
+        }
+      }
+    }
+  }
+}

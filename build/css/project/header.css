@@ -1,0 +1,14 @@
+/* line 1, ../sprites/common.scss */
+.icon-logo {
+  background-image: url(../../build/images/sprites/common.png);
+  background-position: 0px 0px;
+  width: 92px;
+  height: 37px;
+}
+
+/* line 6, ../../../src/css/project/header.scss */
+header {
+  width: 100%;
+  background: #ffffff;
+  height: 86px;
+}

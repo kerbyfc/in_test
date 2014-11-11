@@ -1,0 +1,89 @@
+/*
+Error: Undefined mixin 'inline-left'.
+        on line 13 of /Users/kerbyfc/Projects/idinaidi_test/src/css/project/share.scss, in `inline-left'
+        from line 13 of /Users/kerbyfc/Projects/idinaidi_test/src/css/project/share.scss
+
+8:   .avatar, .avatar > svg {
+9:     height: $share-block-height;
+10:   }
+11: 
+12:   .avatar {
+13:     @include inline-left;
+14:     width: $share-avatar-width;
+15:     overflow: hidden;
+16:     img {
+17:       @include inline-left;
+18:       // do not scale image - just crop by width
+
+Backtrace:
+/Users/kerbyfc/Projects/idinaidi_test/src/css/project/share.scss:13:in `inline-left'
+/Users/kerbyfc/Projects/idinaidi_test/src/css/project/share.scss:13
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:338:in `block in visit_mixin'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:98:in `with_mixin'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:336:in `visit_mixin'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block (2 levels) in visit_rule'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `map'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:420:in `block in visit_rule'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:418:in `visit_rule'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `block in with_base'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:115:in `with_frame'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/stack.rb:79:in `with_base'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/tree/root_node.rb:20:in `render'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/engine.rb:268:in `render'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:491:in `update_stylesheet'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/sass-3.4.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/lib/compass/sass_compiler.rb:40:in `compile!'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/lib/compass/commands/update_project.rb:49:in `perform'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/bin/compass:44:in `call'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/bin/compass:23:in `load'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/bin/compass:23:in `<main>'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+/Users/kerbyfc/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'inline-left'.\A         on line 13 of /Users/kerbyfc/Projects/idinaidi_test/src/css/project/share.scss, in `inline-left'\A         from line 13 of /Users/kerbyfc/Projects/idinaidi_test/src/css/project/share.scss\A \A 8:   .avatar, .avatar > svg {\A 9:     height: $share-block-height;\A 10:   }\A 11: \A 12:   .avatar {\A 13:     @include inline-left;\A 14:     width: $share-avatar-width;\A 15:     overflow: hidden;\A 16:     img {\A 17:       @include inline-left;\A 18:       // do not scale image - just crop by width"; }

@@ -1,0 +1,16 @@
+.promo.row {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.promo[class*=col-] {
+  font-size: 16px;
+  line-height: 1.5;
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+.promo.col-half {
+  padding: 68px 25px;
+}

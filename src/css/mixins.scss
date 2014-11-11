@@ -1,0 +1,36 @@
+@import 'vars';
+
+@mixin centered-block ($bottom-top-margins:0) {
+  margin: $bottom-top-margins auto;
+}
+
+@mixin size ($width:0, $height:$width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin inline-left {
+  display: inline-block;
+  float: left;
+}
+
+@mixin inline-right {
+  display: inline-block;
+  float: right;
+}
+
+@mixin rounded ($radius:3px) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin rounded-left($radius:3px) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}

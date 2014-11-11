@@ -1,0 +1,11 @@
+@import 'vars';
+
+.page-title {
+  margin: 0;
+  letter-spacing: 0.9;
+  font-size: $page-title-font-size;
+  line-height: $page-title-font-size + $page-title-line-spacing;
+  text-transform: uppercase;
+  color: #24599b;
+  text-align: center;
+}

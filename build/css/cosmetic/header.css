@@ -1,0 +1,25 @@
+/* line 1, ../sprites/common.scss */
+.icon-logo {
+  background-image: url(../../build/images/sprites/common.png);
+  background-position: 0px 0px;
+  width: 92px;
+  height: 37px;
+}
+
+/* line 6, ../../../src/css/project/header.scss */
+header {
+  width: 100%;
+  background: #ffffff;
+  height: 86px;
+}
+
+/* line 4, ../../../src/css/cosmetic/header.scss */
+header {
+  border-bottom: 1px solid #d8d7d7;
+}
+/* line 6, ../../../src/css/cosmetic/header.scss */
+header .avatar, header .nickname {
+  height: 86px;
+  line-height: 86px;
+  padding-left: 12px;
+}

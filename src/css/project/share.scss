@@ -1,0 +1,91 @@
+@import 'vars';
+
+.share {
+
+  height: $share-block-height;
+  background: $share-block-bg;
+
+  .avatar, .avatar > svg {
+    height: $share-block-height;
+  }
+
+  .avatar {
+    @include inline-left;
+    width: $share-avatar-width;
+    overflow: hidden;
+    img {
+      @include inline-left;
+      // do not scale image - just crop by width
+      // to avoid corruption
+      width: $share-avatar-width;
+    }
+    // svg arrow on top of photo
+    svg {
+      width: 16px;
+      position: absolute;
+      margin-left: -14px;
+      fill: $share-block-bg;
+    }
+  }
+
+  .hint, .links {
+    margin-left: $share-avatar-width;
+    padding: 12px 36px 0 12px;
+  }
+
+  .hint {
+    margin-top: 10px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .links {
+    height: 55px - 12px;
+    width: col(4) - $share-avatar-width - 12 - 38;
+  }
+
+  .social {
+
+    & > a {
+      height: $share-block-height / 2;
+      position: relative;
+      text-align: center;
+
+      & > .icon-svg {
+        @include size(50px);
+        float: none;
+        margin-top: 17px;
+        margin-left: -25px;
+        fill: #fff;
+      }
+
+      i {
+        position: absolute;
+        display: block;
+        width: 100px;
+        text-align: right;
+        right: 10px;
+        top: 10px;
+        color: $gray-light;
+      }
+
+      &:hover i {
+        color: $gray-hover;
+      }
+    }
+
+
+    .fb {
+      background-color: #24599b;
+    }
+    .tt {
+      background-color: #1eaaf1;
+    }
+    .vk {
+      background-color: #45668e;
+    }
+    .ok {
+      background-color: #ff7b11;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import 'vars';
+@import 'mixins';
+
+.container {
+  width: $content-width;
+  clear: both;
+  @include centered-block;
+
+  .separator {
+    clear: both;
+    height: 50px;
+  }
+}

@@ -1,0 +1,70 @@
+@import 'vars';
+
+@mixin item-overlay-block {
+  @include inline-right;
+  margin-left: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  padding-left: $grid-padding * 2;
+  padding-right: $grid-padding * 2;
+}
+
+.items {
+  .item {
+    padding-bottom: $grid-padding;
+    padding-top: $grid-padding;
+
+    &.col-half {
+      height: col($cols/2);
+    }
+    &.col-quarter {
+      height: col($cols/4) - $grid-padding;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .overlay {
+      position: absolute;
+      right: $grid-padding;
+      a, p {
+        @include item-overlay-block;
+      }
+      p {
+        @include rounded-left;
+        color: rgb(240, 239, 236);
+        &:after {
+          content: " р."
+        }
+      }
+      a {
+        text-transform: uppercase;
+      }
+    }
+
+    &.col-half {
+      .overlay {
+        bottom: $grid-padding * 3;
+        a {
+          @include text(12px, 45px);
+        }
+        p {
+          @include text(25px, 45px);
+        }
+      }
+    }
+    &.col-quarter {
+      .overlay {
+        bottom: $grid-padding * 2;
+        a {
+          @include text(12px, 32px);
+        }
+        p {
+          @include text(18px, 32px);
+        }
+      }
+    }
+  }
+}
+
